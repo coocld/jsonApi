@@ -3,7 +3,7 @@
 
 * 接口约定
     
-    1) 接口中的字段若包含资源文件，如：图片、文档等，比如：/public/hao/img/logo.png，以/开头需要加上
+    1) 接口中的字段若包含资源文件，如：图片、文档等，比如：/img/logo.png，以/开头需要加上
     服务器域名构造完整url进行请求，以http://,https://等开头则可以直接请求。
     
     2) 如果不采用COOKIE机制来进行会话，则所有请求都必须先获取session_key并作为参数带上去，login或auth成功后需要刷新session_key。
@@ -18,7 +18,7 @@
         :---        |   :---:   |   :---:   |   :---
         format      |   string  |   否      |   默认为：web方式,暂时支持json,xml两种格式
         session_key |   string  |   否      |   当使用/user/auth接口进行会话后,必须带上
-        client      |   string  |   否      |   客户端/版本-平台/系统版本号，如：yqhmobile/1.0.0-ios/7.0.4，移动客户端需带上
+        client      |   string  |   否      |   客户端/版本-平台/系统版本号，如：mobile/1.0.0-ios/7.0.4，移动客户端需带上
         size        |   int     |   否      |   分页大小, 默认为：10，取值：1~50
         p           |   int     |   否      |   页码，默认为：1 
         date        |   string  |   否      |   日期，格式：yyyy-mm-dd，如：2012-12-12
