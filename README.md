@@ -105,6 +105,7 @@
         
 * 发送短信验证码 /send/smscode/[type] or ?type=[type]
     * 请求方式： GET | POST
+        
         参数名  |   类型    |   必需    |   说明
         :---    |   :---:   |   :---:   |   :---
         type    |   string  |   是      |   短信验证码类型，可以是：reg,auth,bankcard,getpwd,drawcash等
